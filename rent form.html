@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html >
+<head>
+     <title>Pushpak Vahan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #004D74;
+  
+        }
+
+        header {
+            background-color:#022B42;
+            color:  hsl(180, 86%, 45%);
+            padding: 1px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 90px auto;
+            background-color: #006494;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+       
+       
+        .rent-button {
+            display: block;
+            width: 90%;
+            padding: 6px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+    </style>
+    <script>
+          function check()
+        {
+            var tx1=document.getElementById("r1").value;
+            var tx2=document.getElementById("r2").value;
+            var tx3=document.getElementById("r3").value;
+            var tx4=document.getElementById("r4").value;
+            var tx5=document.getElementById("r5").value;
+            
+            if(tx1.length==0)
+            {
+                alert("Please enter the Username");
+                return false;
+            }
+            if(tx2.length==0)
+            {
+                alert("Please enter the contact Number");
+                return false;
+            }
+            if(tx3.length==0)
+            {
+                alert("Please enter the address");
+                return false;
+            }
+            if(tx4.length==0)
+            {
+                alert("Please enter the duration");
+                return false;
+            }
+            if(tx5.length==0)
+            {
+                alert("Please enter the bike model");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Bike Rental Form</h1>
+    </header>
+
+    <form>
+        <table align="center">
+            <tr>
+               <td><input type="text" id="r1" name="t1" placeholder="Full name" class="h"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="r2" name="t2" placeholder="Contact Number" class="h"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="r3" name="t3"  placeholder="Address" class="h"></td>
+            </tr>
+            <tr>
+                <td> <input type="number" id="r4" name="rental-duration" placeholder="Rental Duration" min="1" >
+                </td></tr>
+                 
+         <tr>
+
+        <td><select id="r5" name="bike-model" >
+            <option value="model1">Bike Model 1</option>
+            <option value="model2">Bike Model 2</option>
+            <option value="model3">Bike Model 3</option>
+            <option value="model4">Bike Model 4</option>
+            <option value="model5">Bike Model 5</option>
+            <option value="model6">Bike Model 6</option>
+            <option value="model7">Bike Model 7</option>
+            <option value="model8">Bike Model 8</option>
+            <option value="model9">Bike Model 9</option>
+            <option value="model10">Bike Model 10</option>
+        </select></td></tr>
+
+        <tr><td><a href="rented.html" class="rent-button" align="center">Rent Now</a>    </td></tr>
+    </table>
+    </form>
+
+</body>
+</html>
